@@ -1,0 +1,60 @@
+R-IQ-OQ is an R/Sweave based program designed to serve as a foundation for the 
+Installation Qualification (IQ) and Operational Qualification (OQ) of R 
+(http://www.r-project.org/) when used in environments (such as regulated 
+clinical trials) where such processes may be required.
+
+In these environments, documentation is typically required to demonstrate that 
+software applications have been installed correctly using vendor defined 
+procedures and that the application is operating correctly, using a pre-defined 
+set of tests.
+
+The R-IQ-OQ.Rnw file will generate an automated report that provides output 
+that can be part of **user defined and created** standard operating procedures 
+(SOPs) in which such IQ and OQ tests are performed. These post-installation tests
+are defined by the R Foundation in the "R Installation and Administration Manual" 
+available at:
+
+  http://cran.r-project.org/doc/manuals/R-admin.html
+
+For regulated clinical trials, the R Foundation also provides a document
+entitled:
+
+  R: Regulatory Compliance and Validation Issues A Guidance Document 
+      for the Use of R in Regulated Clinical Trial Environments
+
+available from:
+
+  http://www.r-project.org/doc/R-FDA.pdf
+
+which provides guidance on the use of R in such environments, including 
+references to relevant FDA regulatory guidance documents, descriptions of R's 
+Software Development Life Cycle (SDLC) and information regarding the 
+applicability of various aspects of Title 21 of the U.S. Code of Federal
+Regulations Part 11 (21 CFR 11) and how R fits within that framework.
+
+It is important to note that the output of the R-IQ-OQ program is designed 
+to serve as a general purpose template for use by those operating in 
+environments where installation and operational qualification of
+software applications is deemed to be needed. The structure and content of
+the resultant report may not satisfy all needs and you are free to modify
+the report as your local requirements and SOPs may necessitate. 
+
+There are important notes in the beginning of the R-IQ-OQ.Rnw file that
+should be completely reviewed regarding how to run the program and related
+considerations for environmental settings (eg. locale) that can affect the
+output generated.
+
+You will need a local installation of LaTeX in order to process the resultant
+R-IQ-OQ.tex output file into the final R-IQ-OQ.pdf file. Most Linuxen will 
+either include a LaTeX installation or will provide binaries for easy 
+installation from repos. Windows users will want to look at MikTeX and OSX 
+users at MacTeX, which are provided by third parties.
+
+There are a series of CMDFile*.r files which contain R code that are required
+and are called in a BATCH mode operation from within R-IQ-OQ.Rnw. Be sure
+that these files are present in the same folder as R-IQ-OQ.Rnw.
+
+All programs are made available under the GNU GPL version 2 license, so please 
+observe the copyright and distribution requirements of that license. See
+the COPYING file included.
+
