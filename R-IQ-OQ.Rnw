@@ -1,4 +1,3 @@
-% -*- mode: noweb; noweb-default-code-mode: R-mode; -*-
 
 
 
