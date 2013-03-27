@@ -32,6 +32,14 @@ Software Development Life Cycle (SDLC) and information regarding the
 applicability of various aspects of Title 21 of the U.S. Code of Federal
 Regulations Part 11 (21 CFR 11) and how R fits within that framework.
 
+Note that there is also a more general description of R's Software Development
+Life Cycle (SDLC), which is available from:
+
+  http://www.r-project.org/doc/R-SDLC.pdf
+
+and contains a subset of the relevant content from the R-FDA document, excluding
+the content that is specifically targeted to clinical trials.
+
 It is important to note that the output of the R-IQ-OQ program is designed 
 to serve as a general purpose template for use by those operating in 
 environments where installation and operational qualification of

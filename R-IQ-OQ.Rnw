@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Copyright 2012, Marc Schwartz <marc_schwartz@me.com>
+% Copyright 2013, Marc Schwartz <marc_schwartz@me.com>
 %
 % This software is distributed under the terms of the GNU General
 % Public License Version 2, June 1991.  
@@ -39,17 +39,15 @@
 
 
 
-% NOTE THAT YOU MAY NEED TO RUN ONE OF THE FOLLOWING, DEPENDING UPON YOUR OPERATING SYSTEM: 
+% NOTE THAT YOU MAY NEED TO RUN THE FOLLOWING: 
 %
 % export LC_COLLATE=C LANG=en LC_TIME=C
 %
-% OR
-%
-% export LC_COLLATE=C LANG=C LC_TIME=C
-% 
 % IN YOUR TERMINAL SHELL BEFORE RUNNING R BELOW IN ORDER TO MATCH REFERENCE TEST RESULTS DUE 
 % TO LOCALE ISSUES. IF YOU GET ANY TEXT COMPARISON (DIFF) ERRORS, TRY THIS TO
-% RESOLVE THOSE ISSUES. ON OSX MOUNTAIN LION I USE THE SECOND INCANTATION.
+% RESOLVE THOSE ISSUES. ON OSX MOUNTAIN LION I USE THIS INCANTATION AS PER THE 
+% R INSTALLATION AND ADMINISTRATION MANUAL
+% http://cran.r-project.org/doc/manuals/r-release/R-admin.html#Testing-a-Unix_002dalike-Installation
 
 
 
