@@ -1079,7 +1079,15 @@ above output should be reviewed in detail to determine their relevance to the Op
 # Get results from system() calls above
 SystemResults <- list(Result1, Result2, Result3, Result4, Result5, Result6, Result7)
 SystemResults <- sapply(SystemResults, 
-                        function(x) if (class(x) == "try-error") "\\\\textcolor{Red}{FAIL}" else "\\\\textcolor{ForestGreen}{PASS}")
+                        function(x) {
+                          if (class(x) == "try-error") {
+                            "\\\\textcolor{Red}{FAIL}"
+                          } else if(x != 0L) {
+                            "\\\\textcolor{Red}{FAIL}"
+                          } else {
+                            "\\\\textcolor{ForestGreen}{PASS}"
+                          }
+                        })
                         
 # Get results from files created during CMDFileX execution if failures are found
 ResultFileNames <- paste("/IQ-OQ-TestOutput/CMDFile", 1:7, "Fail", sep = "")
